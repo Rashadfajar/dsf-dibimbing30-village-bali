@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Village</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Font Family -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="wrap">
+        <a href="">
+          <img
+            src="./assets/logo.png" alt=""
+          />
+        </a>
+        <nav>
+          <ul id="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Our Rooms</a></li>
+            <li><a href="">Restourant</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+          <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="banner">
+        <div class="overlay"></div>
+        <div class="banner-content">
+          <h2 class="title">Book here</h2>
+          <p>Take Advantage of the Lowest Available Prices.</p>
+          <div class="separator"></div> 
+          <p><i>If you happen to find a better online daily rate, we will match your price.</i></p>
+          <button class="book-now-button">Book Now</button>
+        </div>
+      </section>
+
+      <section class="story-section">
+        <div class="story-content">
+          <h2 class="story-title">Discover Our Story</h2>
+          <p>
+            Located in Uluwatu, 200 m from Impossible Beach, Village Bali provides accommodation 
+            with an outdoor swimming pool, free private parking, a bar and a garden.
+          </p>
+          <div class="lol">
+            <img src="./assets/logo2.png" alt="">
+          </div>
+        </div>
+        <div class="story-images">
+          <img src="./assets/3-photo.png" alt="Village Overview" class="story-img" />
+        </div>
+      </section>
+
+      <section class="our-room">
+        <h2 class="title-section">Our Room</h2>
+        <div class="card-wrapper">
+          <div class="card">
+            <img src="./assets/room.jpg" alt="" />
+            <h5><a href="">Deluxe Queen room</a></h5>
+            <p>
+              This double room has a minibar, lounge chair, private garden and
+              air conditioning.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/assets/room2.jpg" alt="" />
+            <h5><a href="">Superior King private</a></h5>
+            <p>
+                This double room has a minibar, private entrance and air conditioning.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/room3.jpg" alt="" />
+            <h5><a href="">King Deluxe or Twin Room with bathtub</a></h5>
+            <p>
+                This twin/double room features air conditioning, private entrance and minibar.
+            </p>
+          </div>
+        </div>
+        <section class="booking-form">
+            <div class="form-container">
+                <form action="#" method="get">
+                    <label for="check-in">Check in:</label>
+                    <input type="text" id="check-in" name="check-in" placeholder="dd/mm/yyyy">
+                    <label for="check-out">Check out:</label>
+                    <input type="text" id="check-out" name="check-out" placeholder="dd/mm/yyyy">
+                    <label for="promo-code">Promo code:</label>
+                    <input type="text" id="promo-code" name="promo-code" placeholder="">
+                    <button type="submit">BOOK NOW</button>
+                </form>
+            </div>
+        </section>
+      </section>
+
+      <section class="explore">
+        <div class="explore-wrap">
+          <div class="explore-item">
+            <h3 class="explore-title">DESTINATION</h3>
+            <h1 class="explore-title">Explore Uluwatu</h1>
+
+            <p class="explore-content">
+              Attractions in the area include Uluwatu Temple, 5 km away, or Suluban Uluwatu Beach, situated 4.2 km from the property.
+            </p>
+          </div>
+
+          <div class="explore-item2">
+            <div class="explore-hero">
+              <div class="explore-img">
+                <img src="/assets/village-explore.jpg" alt="">
+              </div>
+              <div class="explore-img">
+                <img src="/assets/village-explore2.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner2">
+        <div class="banner-content2">
+          <h2 class="title">Visit Our fantastic villas</h2>
+          <p class="sub-title">
+            Located in Uluwatu, 200 m from Impossible Beach, Village Bali
+            provides accommodation with an outdoor swimming pool, free private
+            parking, a bar and a garden.
+          </p>
+          <a href="" class="btn-hero2">DISCOVER OUR ROOM</a>
+        </div>
+      </section>
+    </main>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            <p>&copy; dsf-dibimbing 2024. (Rashadfajar)</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>

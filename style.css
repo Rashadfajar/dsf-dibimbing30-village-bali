@@ -1,0 +1,545 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+  
+  /*  ============= header ============= */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: black;
+  padding: 2px 2%;
+}
+
+header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+  
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.burger div {
+  width: 20px; /* Lebar burger dikurangi dari 25px menjadi 20px */
+  height: 2px; /* Tinggi burger dikurangi dari 3px menjadi 2px */
+  background-color: #b49f6b;
+  margin: 4px; /* Jarak antar garis dikurangi dari 5px menjadi 4px */
+  transition: all 0.3s ease;
+}
+
+header a img {
+  width: 200px;
+}
+
+header ul {
+  display: flex;
+  font-family: "Karla", sans-serif;
+}
+
+header ul li {
+  display: block;
+}
+
+header ul li a {
+  font-family: "Karla", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  padding: 0 6px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+header ul li a:hover {
+  color: #b49f6b;
+}
+
+  
+/* ============= Banner ============= */
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/village-drone.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;/* Tambahkan opacity untuk membuat gelap */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay untuk membuat gambar lebih gelap */
+}
+
+.banner-content {
+  padding: 0 10%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  z-index: 1
+}
+
+.banner-content .title {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 20px auto;
+}
+
+.banner-content p {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin: 30px 0px 40px 0px;
+}
+
+.banner-content p i{
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 18px;
+  text-align: center; 
+}
+
+.separator {
+  width: 50%;
+  height: 2px;
+  background-color: white; /* Warna garis */
+  margin: 20px auto; /* Spasi di atas dan bawah garis */
+}
+
+.book-now-button {
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  padding: 18px 37px;
+  background-color: #544606;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-now-button:hover {
+  background-color: #7a6f24;
+  text-decoration: underline;
+}
+  
+
+/* ==================Discover Our Story================== */
+.story-section {
+  display: flex;
+  padding: 5%;
+  align-items: center;
+  justify-content: space-between;
+}
+  
+.story-content {
+  flex: 1;
+  margin-right: 5%;
+}
+  
+.story-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+  
+.story-content p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5em;
+  text-align: justify;
+}
+  
+.story-images {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+  
+.story-img {
+  width: 600px;
+  max-width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 0 2%;
+
+}
+
+.lol img{
+  padding: 2% 0;
+  width: 300px;
+}
+
+
+/* ============= Our Room ============= */
+.our-room {
+  text-align: center;
+  padding: 5%;
+  background: #f5f4f0;
+}
+
+.title-section {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.card-wrapper {
+  display: flex;
+  padding-top: 26px;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+}
+  
+.card {
+  text-align: center;
+  width: 28%;
+  padding: 5px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  display: flex;
+  justify-items: center;
+}
+
+.card:hover {
+  background: white;
+  cursor: pointer;
+}
+  
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* border-radius: 8px; */
+}
+
+.card h5 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card h5 a {
+  color: #b49f6b;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.card h5 a:hover{
+  text-decoration: underline;
+}
+
+.card p {
+  margin-top: auto;
+  font-size: 12px;
+  padding-top: 10px;
+  text-align: center;
+}
+  
+
+/* ============= Booking ============= */
+.booking-form {
+  padding: 5% 10%;
+  background: #f5f4f0;
+  text-align: center;
+  margin-top: 20px;
+}
+  
+.form-container {
+  border: 1px solid #ddd;
+  padding: 24px 32px;
+  box-shadow: 0 16px 30px #ebeef3;
+  margin: 3px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  z-index: 1000;
+}
+    
+.booking-form label {
+  margin-right: 10px;
+  font-size: 14px;
+}
+  
+.booking-form input[type="text"] {
+  padding: 10px;
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+    
+.booking-form button {
+  background-color: #544606;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 10px;
+  transition: 0.3s;
+}
+    
+.booking-form button:hover {
+  background-color: #7a6f24;
+}
+
+
+/* =============explore===================== */
+.explore{
+  padding: 5%;
+  color: #795e2c;
+}
+.explore-wrap{
+  display: grid;
+  grid-template-columns: 35% 65%;
+  align-items: center;
+}
+
+.explore-title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.explore-item{
+  margin-right: 12%;
+}
+
+.explore-item h1{
+  font-size: 2em;
+  padding-bottom: 2%;
+}
+
+.explore-item .explore-content {
+  text-align: justify;
+}
+
+
+.explore-hero {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1em;
+}
+
+.explore-img img{
+  width: 100%;
+  height: auto;
+  padding: 2%;
+}
+
+
+/* ==============Banner2================== */
+.banner2 {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./assets/village-drone2.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.banner-content2 {
+  padding: 0 5%;
+  color: white;
+  text-align: start;
+}
+.banner-content2 .title {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+.banner-content2 .sub-title{
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+.btn-hero2 {
+  text-decoration: none;
+  background-color: #795e2c;
+  border-radius: 20px;
+  color: white;
+  width: 15em;
+  padding: 1em;
+  display: block;
+  margin-top: 2em;
+  text-align: center;
+  /* border: 1px solid white; */
+  font-size: 1em;
+}
+
+.btn-hero2:hover {
+  background-color: #9b7735;
+  text-decoration: underline;
+}
+
+
+    
+/* =============Footer====================== */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+    
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+    
+.footer-left p {
+  margin: 5px 0;
+}
+
+.footer-left a {
+  color: #b49f6b;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-left a:hover {
+  text-decoration: underline; 
+}
+
+
+  /*====================== 1 ~ 768 px ======================*/
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+    z-index: 1000;
+  }
+
+  header ul {
+    position: absolute;
+    top: 0px;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in;
+    overflow: hidden;
+  }
+
+  header ul.show {
+    transform: translateX(0);
+    right: 0;
+  }
+
+  header ul li {
+    margin: 20px 0;
+  }
+
+  header ul li a {
+    font-size: 20px;
+  }
+
+  .story-section {
+    flex-direction: column;
+  }
+  
+  .story-content {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .story-content p {
+    text-align: center;
+  }
+
+  .story-images {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .story-img {
+    width: 80%;
+  }
+
+  .book-now-button {
+    text-align: center;
+  }
+
+  .card-wrapper {
+    flex-direction: column; /* Mengubah card menjadi vertikal */
+    align-items: center; 
+  }
+
+  .card {
+    width: 90%; /* Buat card lebih lebar, hampir penuh layar */
+    flex-basis: 90%; /* Card memenuhi 90% dari lebar container */
+    margin-bottom: 20px;
+  }
+
+  .card img {
+    object-fit: contain;
+  }
+  .form-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .booking-form input[type="text"] {
+    width: 100%;
+  }
+
+  .explore-wrap {
+    grid-template-columns: auto;
+  }
+
+  .explore-hero {
+    justify-content: center;
+    grid-template-columns: auto;
+    gap: 0.5em;
+    padding: 5%;
+  }
+
+  .explore-title, .explore-content {
+    text-align: center;
+    margin-left: 12%;
+  }
+  
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    }
+}
